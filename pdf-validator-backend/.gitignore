@@ -1,0 +1,37 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Environment variables
+.env
+.env.*
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Uploads (PDF files)
+uploads/*
+!uploads/.gitkeep
+
+# PyInstaller
+dist/
+build/
+
+# Logs
+*.log
+
+# Coverage
+htmlcov/
+.coverage
