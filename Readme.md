@@ -23,13 +23,14 @@ Built as part of the **NIYAMR AI Full-Stack Developer Assignment**.
 
 ### 🖥️ Application Interface
 <p align="center">
-  <img src="screenshots/app-interface.png" alt="PDF Validator Interface" width="850">
+  <img src="./screenshots/app-interface.png" alt="PDF Validator Interface" width="850">
 </p>
 
 ### 📊 Validation Results
 <p align="center">
-  <img src="screenshots/results-table.png" alt="Validation Results Table" width="850">
+  <img src="./screenshots/results-table.png" alt="Validation Results Table" width="850">
 </p>
+
 
 ---
 
