@@ -1,5 +1,4 @@
 
----
 
 ````markdown
 # 📄 PDF Document Validator
@@ -335,7 +334,7 @@ This project is created for educational purposes as part of a job assignment.
 * OpenAI & LM Studio
 * PyMuPDF
 
----
+
 
 **Built in 48 hours as part of a full-stack developer assignment.**
 
