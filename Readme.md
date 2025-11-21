@@ -1,6 +1,6 @@
 
 
-````markdown
+
 # 📄 PDF Document Validator
 
 An AI-powered PDF validation system that checks documents against custom rules using Large Language Models (LLMs). This project validates PDF documents by extracting text and analyzing them against user-defined compliance rules with evidence-based results.
@@ -17,7 +17,6 @@ This application allows users to:
 
 Built as part of the **NIYAMR AI Full-Stack Developer Assignment**.
 
----
 
 ## 📸 Screenshots
 
@@ -32,7 +31,7 @@ Built as part of the **NIYAMR AI Full-Stack Developer Assignment**.
 </p>
 
 
----
+
 
 ## ✨ Features
 
