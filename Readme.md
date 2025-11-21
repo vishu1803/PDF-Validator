@@ -22,13 +22,15 @@ Built as part of the **NIYAMR AI Full-Stack Developer Assignment**.
 
 ## 📸 Screenshots
 
-### Application Interface
-![PDF Validator Interface](screenshots/app-interface.png)
-*Main interface showing PDF upload, rule inputs, and validation button.*
+### 🖥️ Application Interface
+<p align="center">
+  <img src="screenshots/app-interface.png" alt="PDF Validator Interface" width="850">
+</p>
 
-### Validation Results
-![Validation Results](screenshots/results-table.png)
-*Results table displaying pass/fail status, evidence, reasoning, and confidence scores.*
+### 📊 Validation Results
+<p align="center">
+  <img src="screenshots/results-table.png" alt="Validation Results Table" width="850">
+</p>
 
 ---
 
@@ -36,10 +38,10 @@ Built as part of the **NIYAMR AI Full-Stack Developer Assignment**.
 
 - **PDF Upload** — Supports documents up to 10MB  
 - **Custom Rule Validation** — Define any 3 rules to validate against your PDF  
-- **AI-Powered Analysis** — Uses OpenAI API or LM Studio  
-- **Structured Results** — Pass/Fail, evidence, reasoning, and confidence  
-- **Local LLM Support** — LM Studio compatible  
-- **Modern UI** — Next.js + Tailwind CSS  
+- **AI-Powered Analysis** — Works with OpenAI API or LM Studio  
+- **Structured Results** — Pass/Fail, evidence, reasoning, confidence  
+- **Local LLM Support** — Compatible with LM Studio  
+- **Modern UI** — Built with Next.js + Tailwind CSS  
 
 ---
 
@@ -64,8 +66,8 @@ Built as part of the **NIYAMR AI Full-Stack Developer Assignment**.
 
 - Node.js 18+
 - Python 3.10+
-- OpenAI API Key **or** LM Studio
 - Git
+- OpenAI API Key **or** LM Studio
 
 ---
 
@@ -73,13 +75,13 @@ Built as part of the **NIYAMR AI Full-Stack Developer Assignment**.
 
 #️⃣ Backend Setup
 
-1. **Clone the repository**
+### 1. Clone the repository
 ```bash
 git clone <your-repo-url>
 cd pdf-validator-backend
 ````
 
-2. **Create virtual environment**
+### 2. Create virtual environment
 
 ```bash
 python -m venv venv
@@ -91,19 +93,19 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-3. **Install dependencies**
+### 3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4. **Configure environment variables**
+### 4. Configure environment variables
 
 ```bash
 cp .env.example .env
 ```
 
-Example `.env`:
+**Example `.env`:**
 
 ```env
 LLM_PROVIDER=lmstudio
@@ -119,63 +121,63 @@ OPENAI_API_KEY=your-api-key-here
 MAX_FILE_SIZE_MB=10
 ```
 
-5. **Run backend server**
+### 5. Run backend server
 
 ```bash
 uvicorn app.main:app --reload
 ```
 
-API runs at **[http://127.0.0.1:8000](http://127.0.0.1:8000)**
+API runs at → **[http://127.0.0.1:8000](http://127.0.0.1:8000)**
 
 ---
 
 #️⃣ Frontend Setup
 
-1. Navigate to frontend:
+### 1. Navigate to frontend
 
 ```bash
 cd ../pdf-validator-frontend
 ```
 
-2. Install dependencies:
+### 2. Install dependencies
 
 ```bash
 npm install
 ```
 
-3. Create environment file:
+### 3. Configure environment variables
 
 ```bash
 echo "NEXT_PUBLIC_API_URL=http://localhost:8000" > .env.local
 ```
 
-4. Run development server:
+### 4. Start development server
 
 ```bash
 npm run dev
 ```
 
-App runs at **[http://localhost:3000](http://localhost:3000)**
+The frontend runs at → **[http://localhost:3000](http://localhost:3000)**
 
 ---
 
 ## 🔧 Using LM Studio (Local LLM)
 
 1. Download LM Studio
-2. Download a model (recommended: llama-3.2-3b-instruct, phi-3-mini, mistral-7b)
-3. Load the model
-4. Start the server ([http://localhost:1234](http://localhost:1234))
+2. Download a recommended model (llama-3.2-3b, phi-3-mini, mistral-7b)
+3. Load and run the model
+4. Ensure server runs at `http://localhost:1234`
 5. Set `LLM_PROVIDER=lmstudio` in `.env`
 
 ---
 
 ## 📖 Usage
 
-1. Open the app → `http://localhost:3000`
+1. Open the web app
 2. Upload a PDF (2–10 pages)
-3. Enter 3 custom rules
+3. Enter 3 validation rules
 4. Click **Check Document**
-5. View the structured results table
+5. View structured results with evidence + confidence
 
 ---
 
@@ -234,15 +236,14 @@ Health Check:
 GET http://127.0.0.1:8000/health
 ```
 
-PDF Validation:
+Validate PDF:
 
 ```bash
 POST http://127.0.0.1:8000/api/validate
-Content-Type: multipart/form-data
 ```
 
-Swagger: `http://127.0.0.1:8000/docs`
-ReDoc: `http://127.0.0.1:8000/redoc`
+Swagger Docs → `http://127.0.0.1:8000/docs`
+ReDoc → `http://127.0.0.1:8000/redoc`
 
 ---
 
@@ -270,21 +271,21 @@ ReDoc: `http://127.0.0.1:8000/redoc`
 
 ### PDF Extraction
 
-* PyMuPDF for fast, accurate extraction
-* Page-aware text mapping
-* Handles multi-page PDFs
+* Uses PyMuPDF for accurate extraction
+* Maps text with page numbers
+* Handles multi-page documents efficiently
 
 ### LLM Integration
 
-* Works with both OpenAI and LM Studio
+* Supports OpenAI API and LM Studio
 * Deterministic low-temperature prompts
-* Structured JSON output
+* Structured JSON output for reliability
 
 ### Error Handling
 
-* PDF validation (type, size)
-* Detailed error messages
-* Cleanup of temporary files
+* Validates file type & size
+* Clean error messages
+* Auto cleanup of temporary files
 
 ---
 
@@ -292,23 +293,23 @@ ReDoc: `http://127.0.0.1:8000/redoc`
 
 * PDF upload
 * 3 rule inputs
-* Validation with evidence
+* AI validation with evidence
+* Pass/Fail
 * Reasoning
-* Confidence score
+* Confidence (0–100)
 * Next.js + Tailwind
 * FastAPI backend
 * LLM integration
-* Clean UI
 * Complete README
 
 ---
 
 ## 🤝 Contributing
 
-1. Fork repo
-2. Create feature branch
+1. Fork the repo
+2. Create a new branch
 3. Commit and push
-4. Open PR
+4. Create a PR
 
 ---
 
@@ -340,7 +341,4 @@ This project is created for educational purposes as part of a job assignment.
 
 ```
 
----
 
-
-```
