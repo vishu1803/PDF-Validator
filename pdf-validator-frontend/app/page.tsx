@@ -1,5 +1,4 @@
 'use client';
-
 import React, { useState } from 'react';
 import { PDFUploader } from '@/components/PDFUploader';
 import { RulesInput } from '@/components/RulesInput';
