@@ -320,9 +320,9 @@ This project is created for educational purposes as part of a job assignment.
 
 ## 👤 Author
 
-**Your Name**
+**Vishwanath Nishad**
 
-* GitHub: `@yourusername`
+* GitHub: `Vishu1803`
 * Email: `your.email@example.com`
 
 ---
