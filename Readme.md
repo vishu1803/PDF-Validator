@@ -329,7 +329,7 @@ This project is created for educational purposes as part of a job assignment.
 
 ## 🙏 Acknowledgments
 
-* NIYAMR AI for the assignment
+
 * FastAPI
 * OpenAI & LM Studio
 * PyMuPDF
