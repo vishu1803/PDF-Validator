@@ -15,7 +15,7 @@ This application allows users to:
 - Define 3 custom validation rules
 - Receive AI-powered validation results with evidence, reasoning, and confidence scores
 
-Built as part of the **NIYAMR AI Full-Stack Developer Assignment**.
+
 
 
 ## 📸 Screenshots
