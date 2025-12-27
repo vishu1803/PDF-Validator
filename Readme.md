@@ -336,7 +336,7 @@ This project is created for educational purposes as part of a job assignment.
 
 
 
-**Built in 48 hours as part of a full-stack developer assignment.**
+
 
 
 
